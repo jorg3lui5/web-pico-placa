@@ -1,12 +1,18 @@
 # WebPicoPlaca
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Para que este aplicativo se ejecute correctamente, se necesita tener instalado lo siguiente:
 
-## Development server
+- Node: 16.14.0
+- npm 8.3.1
+- angular 12 o 13
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Ejecutar aplicacion web
 
-## Code scaffolding
+1. Descargue las dependencias. Dentro de la carpeta del proyecto ejecutar:
+- npm install --save
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Ejecutar la app:
+- ng serve
 
+3. Acceder a la URL:
+http://localhost:4200/
