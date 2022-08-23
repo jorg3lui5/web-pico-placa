@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>
+    {{mensajeConfirmacionDTO.titulo}}
+</h2>
+<mat-dialog-content fxLayout="column" fxLayoutGap="5px">
+    <div>
+        <span [ngClass]="mensajeConfirmacionDTO.esError ? 'texto-error' : 'texto-informacion'">{{mensajeConfirmacionDTO.mensaje}}</span>
+    </div>
+    <div *ngIf="mensajeConfirmacionDTO.datos && mensajeConfirmacionDTO.datos.length>0">
+        <div *ngFor="let dato of mensajeConfirmacionDTO.datos">
+            <strong>{{dato.clave}}: </strong> {{dato.valor}}
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions fxLayoutAlign="end center">
+    <button mat-raised-button color="primary"  mat-dialog-close (click)="clickCancelar()" *ngIf="this.mensajeConfirmacionDTO.nombreBotonCancelar">
+        {{mensajeConfirmacionDTO.nombreBotonCancelar}}
+    </button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="clickOk()">
+        {{mensajeConfirmacionDTO.nombreBotonOk}}
+    </button>
+</mat-dialog-actions>

@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@import "vars-css.scss";
+
+html, body {
+  height: 100%; 
+  margin-top: 0%;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*INICIO: estilos del contenedor del componente*/
+.content {
+  margin: 20px;
+}
+/*FIn: estilos del contenedor del componente*/
+
+
+/*INICIO: estilos de componentes básicos de formularios*/
+.label-negrita, .label-negrita-primary {
+  font-weight: 500;
+  margin-right: 5px;
+  margin-right: 5px;
+}
+
+.label-negrita-primary, .subtitulo-primary, .card-title-primary {
+  color: $primary;
+}
+
+/*FIN: estilos de componentes básicos de formularios*/
+
+
+/*INICIO: estilos input*/
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: $light;
+}
+
+.input-search-table.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: $light;
+}
+
+.input-search-table.mat-form-field-appearance-fill .mat-form-field-wrapper{
+  margin-bottom: -1.25em;
+}
+
+.button-wrap-row {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+/*FIN: estilos input*/
+
+/*FIN: estilos de componentes básicos de formularios*/
+
+
+/*INICIO: estilos de mensajes snackbar*/
+.mensaje-snackbar-error {
+  background-color: $error;
+  color: $light;
+}
+
+.mensaje-snackbar-advertencia {
+  background-color: $advertencia;
+  color: $dark;
+}
+
+.mensaje-snackbar-informacion { 
+  background-color: $informacion;
+  color: $light;
+}
+/*FIN: estilos de mensajes snackbar*/
+
+
+/*INICIO: estilos de bloqueo de pantalla*/
+/* Block UI Wrapper (Backdrop) */
+div.block-ui-wrapper {
+  background-color: $light-gray;
+  opacity: .5;
+}
+
+/* Spinner */
+div.block-ui-wrapper .loader {
+  border-color: $primary; /* Circle color */
+  border-left-color: $primary-pastel; /* Spinning section in circle color */
+}
+
+/* Message */
+div.block-ui-spinner .message {
+  color: $primary; /* Loading text color */
+}
+/*FIN: estilos de bloqueo de pantalla*/
+
+/*INICIO: margenes y espacios*/
+.espacio-superior {
+  margin-top: 20px;
+}
+.espacio-superior-20 {
+  margin-top: 20px;
+}
+/*FIN: margenes y espacios*/

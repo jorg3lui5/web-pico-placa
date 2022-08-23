@@ -1,0 +1,60 @@
+<div class="content">
+    <mat-card>
+        <mat-card-title>{{_nuevoAuto}}</mat-card-title>
+        <div>
+            <form [formGroup]="formGroup" (keydown.enter)="$event.preventDefault()" (ngSubmit)="clickGuardar()">
+                <div flLayout="column">
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_placa}}</mat-label>
+                            <input formControlName="placa" matInput placeholder="{{_placa}}" maxlength="7">
+                            <mat-error *ngIf="esCampoInvalido('placa')">
+                                {{mostrarMensajeError('placa',_placa)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_color}}</mat-label>
+                            <input formControlName="color" matInput placeholder="{{_color}}" maxlength="20">
+                            <mat-error *ngIf="esCampoInvalido('color')">
+                                {{mostrarMensajeError('color',_color)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_modelo}}</mat-label>
+                            <input formControlName="modelo" matInput placeholder="{{_modelo}}" maxlength="40">
+                            <mat-error *ngIf="esCampoInvalido('modelo')">
+                                {{mostrarMensajeError('modelo',_modelo)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_chasis}}</mat-label>
+                            <input formControlName="chasis" matInput placeholder="{{_chasis}}" maxlength="20">
+                            <mat-error *ngIf="esCampoInvalido('chasis')">
+                                {{mostrarMensajeError('chasis',_chasis)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_otraInformacion}}</mat-label>
+                            <input formControlName="otraInformacion" matInput placeholder="{{_otraInformacion}}" maxlength="100">
+                            <mat-error *ngIf="esCampoInvalido('otraInformacion')">
+                                {{mostrarMensajeError('otraInformacion',_otraInformacion)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div fxLayoutGap="5px"  fxLayout="row" fxLayout.xs="column">
+                    <button mat-raised-button color="primary" type="submit">{{_guardar}}</button>
+                    <button mat-raised-button color="primary" type="button" (click)="clickLimpiar()">{{_limpiar}}</button>
+                </div>
+            </form>
+        </div>
+      </mat-card>
+</div>

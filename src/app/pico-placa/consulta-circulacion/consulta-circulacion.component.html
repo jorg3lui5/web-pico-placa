@@ -1,0 +1,32 @@
+<div class="content">
+    <mat-card>
+        <mat-card-title>{{_consultarCirculacion}}</mat-card-title>
+        <div>
+            <form [formGroup]="formGroup" (keydown.enter)="$event.preventDefault()" (ngSubmit)="clickConsultar()">
+                <div flLayout="column">
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_placa}}</mat-label>
+                            <input formControlName="placa" matInput placeholder="{{_placa}}" maxlength="7">
+                            <mat-error *ngIf="esCampoInvalido('placa')">
+                                {{mostrarMensajeError('placa',_placa)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayout.xs="column">
+                        <mat-form-field fxFlex.xl="50" fxFlex.lg="60" fxFlex.md="80" fxFlex.sm="90" fxFlex.sm="100">
+                            <mat-label>{{_fechaHora}}</mat-label>
+                            <input matInput formControlName="fechaHora" type="datetime-local" placeholder="{{_fechaHora}}">
+                            <mat-error *ngIf="esCampoInvalido('fechaHora')">
+                                {{mostrarMensajeError('fechaHora',_fechaHora)}}
+                            </mat-error>
+                        </mat-form-field>
+                    </div>                    
+                </div>
+                <div fxLayoutGap="5px"  fxLayout="row" fxLayout.xs="column">
+                    <button mat-raised-button color="primary" type="submit">{{_consultar}}</button>
+                </div>
+            </form>
+        </div>
+      </mat-card>
+</div>

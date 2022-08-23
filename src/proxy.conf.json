@@ -1,0 +1,6 @@
+{
+    "/api/*": {
+        "target": "#{api.url}#",
+        "secure": true
+    }
+}

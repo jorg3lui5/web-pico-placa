@@ -1,0 +1,282 @@
+@use "@angular/material" as material;
+
+@include material.core();
+
+$my-primary-color: (
+  50 : #ede8f7,
+  100 : #d2c5ea,
+  200 : #b59fdc,
+  300 : #9779ce,
+  400 : #805cc4,
+  500 : #6a3fb9,
+  600 : #6239b2,
+  700 : #5731aa,
+  800 : #4d29a2,
+  900 : #3c1b93,
+  A100 : #d8cbff,
+  A200 : #b198ff,
+  A400 : #8b65ff,
+  A700 : #774cff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #ffffff,
+  )
+);
+
+$my-accent-color: (
+  50 : #ffe2f0,
+  100 : #ffb6d9,
+  200 : #ff85c0,
+  300 : #ff54a6,
+  400 : #ff3093,
+  500 : #ff0b80,
+  600 : #ff0a78,
+  700 : #ff086d,
+  800 : #ff0663,
+  900 : #ff0350,
+  A100 : #ffffff,
+  A200 : #fff2f5,
+  A400 : #ffbfcf,
+  A700 : #ffa6bc,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$my-warn-color: (
+  50 : #fff1f8,
+  100 : #ffdcee,
+  200 : #ffc5e2,
+  300 : #ffadd6,
+  400 : #ff9cce,
+  500 : #ff8ac5,
+  600 : #ff82bf,
+  700 : #ff77b8,
+  800 : #ff6db0,
+  900 : #ff5aa3,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #fffeff,
+  A700 : #ffe5f0,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$my-primary-pastel-color: (
+  50 : #f9f7fb,
+  100 : #efebf5,
+  200 : #e4deef,
+  300 : #d9d0e8,
+  400 : #d1c6e3,
+  500 : #c9bcde,
+  600 : #c3b6da,
+  700 : #bcadd5,
+  800 : #b5a5d1,
+  900 : #a997c8,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffffff,
+  A700 : #efe6ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$my-dark-color: (
+  50 : #e0e0e0,
+  100 : #b3b3b3,
+  200 : #808080,
+  300 : #4d4d4d,
+  400 : #262626,
+  500 : #000000,
+  600 : #000000,
+  700 : #000000,
+  800 : #000000,
+  900 : #000000,
+  A100 : #a6a6a6,
+  A200 : #8c8c8c,
+  A400 : #737373,
+  A700 : #666666,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$my-gray-color: (
+  50 : #fafafa,
+  100 : #f2f2f2,
+  200 : #e9e9e9,
+  300 : #e0e0e0,
+  400 : #dadada,
+  500 : #d3d3d3,
+  600 : #cecece,
+  700 : #c8c8c8,
+  800 : #c2c2c2,
+  900 : #b7b7b7,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffffff,
+  A700 : #fff5f5,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$my-light-gray-color: (
+  50 : #fdfdfd,
+  100 : #fafafa,
+  200 : #f6f6f6,
+  300 : #f2f2f2,
+  400 : #f0f0f0,
+  500 : #ededed,
+  600 : #ebebeb,
+  700 : #e8e8e8,
+  800 : #e5e5e5,
+  900 : #e0e0e0,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffffff,
+  A700 : #ffffff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$app-primary: material.define-palette($my-primary-color);
+$app-accent: material.define-palette($my-accent-color);
+$app-warn: material.define-palette($my-warn-color);
+
+
+// extra Colors
+$custom-primary-pastel: material.define-palette($my-primary-pastel-color);
+$custom-dark: material.define-palette($my-dark-color);
+$custom-gray: material.define-palette($my-gray-color);
+$custom-light-gray: material.define-palette($my-light-gray-color);
+
+$custom-theme: material.define-light-theme(
+  (
+    color: (
+      primary: $app-primary,
+      accent: $app-accent,
+      warn: $app-warn,
+    ),
+  )
+);
+
+@include material.all-component-themes($custom-theme);
+
+.mat-primary-pastel {
+  background-color: material.get-color-from-palette($custom-primary-pastel, 500);
+  color: material.get-color-from-palette($custom-primary-pastel, 500-contrast);
+}
+.mat-secondary {
+  background-color: material.get-color-from-palette($app-accent, 500);
+  color: material.get-color-from-palette($app-accent, 500-contrast);
+}
+.mat-secondary-pastel {
+  background-color: material.get-color-from-palette($app-warn, 500);
+  color: material.get-color-from-palette($app-warn, 500-contrast);
+}
+.mat-dark {
+  background-color: material.get-color-from-palette($custom-dark, 500);
+  color: material.get-color-from-palette($custom-dark, 500-contrast);
+}
+.mat-gray {
+  background-color: material.get-color-from-palette($custom-gray, 500);
+  color: material.get-color-from-palette($custom-gray, 500-contrast);
+}
+.mat-light-gray {
+  background-color: material.get-color-from-palette($custom-light-gray, 500);
+  color: material.get-color-from-palette($custom-light-gray, 500-contrast);
+}

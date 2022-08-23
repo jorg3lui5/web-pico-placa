@@ -1,0 +1,18 @@
+[
+  {
+    "icono": "settings_icon",
+    "nombre": "Menu",
+    "opciones": [ 
+      {
+        "icono": "list_alt",
+        "nombre": "Registro de autos",
+        "url": "/pico-placa/ingreso-auto"
+      },
+      {
+        "icono": "compare_arrows",
+        "nombre": "Consultar Circulación",
+        "url": "/pico-placa/consulta-circulacion"
+      }  
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+<div>
+  <mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1>{{_picoPlaca}}</h1>
+  </mat-toolbar>
+
+  <mat-sidenav-container>
+    <mat-sidenav #snav class="mat-elevation-z8" id="sidenavMenu" [mode]="sideNavModoOver?'over':'side'" [opened]="sideNavAbierto">
+      <mat-nav-list>
+        <mat-expansion-panel *ngFor="let menu of lstOpcionMenu">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{menu.nombre}}
+            </mat-panel-title>
+            <mat-panel-description>
+              <mat-icon>{{ menu.icono }}</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <a mat-list-item [routerLink]="opcion.url" *ngFor="let opcion of menu.opciones">
+            <mat-icon>{{ opcion.icono }}</mat-icon>{{opcion.nombre}}</a>
+        </mat-expansion-panel>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+
