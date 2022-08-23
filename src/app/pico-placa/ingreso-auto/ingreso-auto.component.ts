@@ -86,8 +86,14 @@ export class IngresoAutoComponent extends Mensajes implements OnInit {
         }
       },
       error:(error)=>{
+        console.log(error);
         this.bloqueoPantalla.reset();
-        this.mostrarMensaje(error.error.message,TipoMensajeErrorEnum.ERROR)
+        if(error?.error?.message){
+          this.mostrarMensaje(error.error.message,TipoMensajeErrorEnum.ERROR)
+        }
+        else {
+          this.mostrarMensaje(error.message,TipoMensajeErrorEnum.ERROR)
+        }
       }
     })
   }
